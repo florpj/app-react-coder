@@ -1,0 +1,38 @@
+
+.navbar-style{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu{
+    background-color: rgb(255, 249, 220);
+    width: 75%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+.menu-link{
+    text-decoration: none;
+    padding: 2rem;
+    color: rgb(44, 43, 43);
+}
+
+.carritoBoton{
+    height: 50%;
+    margin: 1rem;
+    padding: 0.7rem;
+    background-color: rgb(44, 43, 43);
+    border-radius: .5rem;
+    color: rgb(255, 249, 220);
+}
+
+
+.logo{
+    height: 12rem;
+}
