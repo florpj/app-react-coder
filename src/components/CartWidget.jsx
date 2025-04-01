@@ -5,7 +5,7 @@ const CartWidget = () => {
   return (
     <div className="carritoBoton">
       <FaBasketShopping fontSize={'1.2rem'}/>
-      <span>1</span>
+      <span>2</span>
     </div>
   );
 };
