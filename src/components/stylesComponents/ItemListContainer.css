@@ -1,6 +1,38 @@
+.contenedor-pizzas{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .titulo-pag-card{
-    margin-top: 3rem;
+    margin: 3rem auto; 
     color: rgb(255, 249, 220);
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Estilos de Item Pizza */
+.cardPizza{
+    width: 30%;
+    height: 450px;
+    background-color: rgb(255, 249, 220); 
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.imagenPizza {
+    width: 80%;
+    margin: 1.2rem 0;
+}
+
+.tituloPizza,
+.precioPizza{
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    color: rgb(44, 43, 43);
+}   
