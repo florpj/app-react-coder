@@ -21,7 +21,7 @@ const ItemCount = () => {
           <span className="valor">{cont}</span>
           <button className="botonCont"onClick={sumar}>+</button>
         </div>
-        <button className="boton">Agregar al carrito</button>
+        <button className="boton">Agregar al pedido</button>
       </div>
   )
 }

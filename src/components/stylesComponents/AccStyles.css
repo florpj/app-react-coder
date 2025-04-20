@@ -5,6 +5,7 @@
   justify-content: space-around;  
   background-color: rgb(255, 249, 220);
   padding: 1.5rem;
+  border-radius: 1rem;
 }
 .contador {
     display: flex;
