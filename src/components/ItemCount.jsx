@@ -1,15 +1,17 @@
 import { useState } from "react"
 import "./stylesComponents/AccStyles.css"
 
-const ItemCount = () => {
-    const [cont, setCont] = useState(1);
+const ItemCount = ({stock}) => {
+    const [cont, setCont] = useState(0);
 
     const sumar = () => {
-      setCont (cont + 1)
-
-    }
+      if (stock && cont<stock) {
+        setCont (cont + 1)
+      }
+    }  
+    
     const restar = () => {
-      if (cont > 0){
+      if (stock && cont > 0){
         setCont (cont - 1)
       }
     }

@@ -10,7 +10,7 @@ const ItemDetail = ({item}) => {
             <h2 className='tituloPizzaDetail'>{item.nombre}</h2>
             <p className='descPizzaDetail'>{item.descripcion}</p>
             <span className='precioPizzaDetail'>${item.precio}</span>
-            <ItemCount />
+            <ItemCount stock={item.stock}/>
         </div>
     </div>
   )

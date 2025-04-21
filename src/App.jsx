@@ -1,8 +1,9 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer'
-import { BrowserRouter, Routes, Route, Router } from 'react-router-dom'
-import ItemDetail from './components/ItemDetail'
+import { BrowserRouter, Routes, Route, Router, RouterProvider } from 'react-router-dom'
+import ItemDetailContainer from './components/ItemDetailContainer'
+
 
 function App() {
   
@@ -13,16 +14,9 @@ function App() {
 
       <Routes>
 
-        {/* <Route path='/' element={<ItemListContainer greeting ='Bienvenido al menu de las mejores PIZZAS!!'/>} /> */}
-        <Route path='/' element={<ItemDetail item={{
-      id: '13',
-      nombre: "RUCULA",
-      descripcion: "Pizza con salsa de Tomate Muzzarella Rúcula Parmesano y Orégano Grande",
-      precio: 8299,
-      imagen: "https://i.postimg.cc/NMprYQ2s/Ru-cula.jpg",
-      categoria: "VEGGIES!",
-      stock: 22
-    }}/>} />
+        <Route path='/' element={<ItemListContainer greeting ='Bienvenido al menu de las mejores PIZZAS!!'/>} />
+        <Route path='/categoria/:categoria' element={<ItemListContainer greeting =''/>} />
+        <Route path='/item/:id' element={<ItemDetailContainer />} />
         
       </Routes>
       
