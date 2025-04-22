@@ -128,7 +128,7 @@ const pizzas = [
   ];
 
 export const getPizzas = () => {
-  return new Promise((resolve, reject)=>{
+  return new Promise((resolve)=>{
     setTimeout(()=>{
       resolve(pizzas)
     }, 2000)
@@ -136,7 +136,7 @@ export const getPizzas = () => {
 }
 
 export const getIdPizza = (id) => {
-  return new Promise((resolve, reject)=>{
+  return new Promise((resolve)=>{
     const pizza = pizzas.find((el) => (id === el.id))
     setTimeout(()=>{
       resolve(pizza)
