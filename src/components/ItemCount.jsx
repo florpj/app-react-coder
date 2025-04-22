@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./stylesComponents/AccStyles.css"
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, OnAdd}) => {
     const [cont, setCont] = useState(0);
 
     const sumar = () => {
@@ -23,7 +23,7 @@ const ItemCount = ({stock}) => {
           <span className="valor">{cont}</span>
           <button className="botonCont"onClick={sumar}>+</button>
         </div>
-        <button className="boton">Agregar al pedido</button>
+        <button className="boton" onClick={()=> stock && cont && OnAdd(cont)}>Agregar al pedido</button>
       </div>
   )
 }

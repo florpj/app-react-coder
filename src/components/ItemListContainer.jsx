@@ -21,7 +21,6 @@ const ItemListContainer = ({greeting}) => {
         .catch((error)=> console.log(error))
     }, [categoria])
     
-    console.log(data)
     return(
         <div>
             <h1 className="titulo-pag-card">{greeting}</h1>

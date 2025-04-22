@@ -3,6 +3,10 @@ import './stylesComponents/ItemDetailStyles.css'
 import ItemCount from './ItemCount'
 
 const ItemDetail = ({item}) => {
+  const OnAdd = (cantidad) =>{
+    console.log(`Agregaste ${cantidad} de pizzas ${item.nombre} al carrito`)
+  }
+
   return (
     <div className="contenedor-detalle">
         <div className="imagen-fondo" style={{ backgroundImage: `url(${item.imagen})` }}></div>
@@ -10,7 +14,7 @@ const ItemDetail = ({item}) => {
             <h2 className='tituloPizzaDetail'>{item.nombre}</h2>
             <p className='descPizzaDetail'>{item.descripcion}</p>
             <span className='precioPizzaDetail'>${item.precio}</span>
-            <ItemCount stock={item.stock}/>
+            <ItemCount stock={item.stock} OnAdd={OnAdd}/>
         </div>
     </div>
   )
