@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Router, RouterProvider } from 'react-rout
 import ItemDetailContainer from './components/ItemDetailContainer'
 
 
+
 function App() {
   
 
@@ -13,10 +14,10 @@ function App() {
       <Navbar />
 
       <Routes>
-
+        
         <Route path='/' element={<ItemListContainer greeting ='Bienvenido al menu de las mejores PIZZAS!!'/>} />
         <Route path='/categoria/:categoria' element={<ItemListContainer greeting =''/>} />
-        <Route path='/item/:id' element={<ItemDetailContainer />} />
+        <Route path='/item/:id' element={<ItemDetailContainer />} /> 
         
       </Routes>
       
