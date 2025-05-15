@@ -1,0 +1,66 @@
+.container-carrito{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 249, 220);
+}
+
+.titulo-carrito{
+    margin: 3rem auto; 
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.parrafo-carrito{
+    margin-bottom: 2rem;
+}
+
+.item-compra-container{
+    background-color: rgb(255, 249, 220);
+    color:rgb(44, 43, 43);
+    width: 75%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.imagen-carrito{
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+.info-producto{
+    text-align: justify;
+}
+
+.boton-eliminar-prod{
+    background-color: rgb(44, 43, 43);
+    color: rgb(255, 249, 220);
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    width: 2rem;
+}
+
+.listado-compra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boton-carrito{
+    background-color: rgb(255, 249, 220);
+    color: rgb(44, 43, 43);
+    margin-bottom: 1rem;
+}
+
+.container-total{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}

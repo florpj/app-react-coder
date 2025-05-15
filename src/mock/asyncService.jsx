@@ -1,15 +1,5 @@
-const pizzas = [
+export const pizzas = [
     {
-      id: '01',
-      nombre: "MUZZARELLA",
-      descripcion: "Pizza con salsa de Tomate Muzzarella y Orégano Grande",
-      precio: 5999,
-      imagen: "https://i.postimg.cc/d1CGfT4B/Muzza.jpg",
-      categoria: "veggies",
-      stock: 30 
-    },
-    {
-      id: '02',
       nombre: "DOBLE MUZZARELLA",
       descripcion: "Pizza con Salsa de Tomate Muzzarella y Orégano Grande",
       precio: 10499,
@@ -18,7 +8,6 @@ const pizzas = [
       stock: 30
     },
     {
-      id: '03',
       nombre: "MUZZARELLA Y PANCETA",
       descripcion: "Pizza con Salsa de Tomate Muzzarella Panceta y Orégano Grande",
       precio: 11299,
@@ -27,7 +16,6 @@ const pizzas = [
       stock: 45
     },
     {
-      id: '04',
       nombre: "JAMON",
       descripcion: "Pizza con Salsa de Tomate Muzzarella Jamón y Orégano Grande",
       precio: 9799,
@@ -36,7 +24,6 @@ const pizzas = [
       stock: 40
     },
     {
-      id: '05',
       nombre: "JAMON Y MORRON",
       descripcion: "Pizza con salsa de Tomate Muzzarella Jamón Morrón y Orégano Grande",
       precio: 12799,
@@ -45,7 +32,6 @@ const pizzas = [
       stock: 20
     },
     {
-      id: '06',
       nombre: "FUGAZZETA",
       descripcion: "Pizza con Cebolla Muzzarella y Orégano Grande",
       precio: 7499,
@@ -54,7 +40,6 @@ const pizzas = [
       stock: 25
     },
     {
-      id: '07',
       nombre: "FUGAZZETA Y JAMON",
       descripcion: "Pizza con Cebolla Muzzarella Jamón y Orégano Grande",
       precio: 10999,
@@ -63,7 +48,6 @@ const pizzas = [
       stock: 25
     },
     {
-      id: '08',
       nombre: "NAPOLITANA",
       descripcion: "Pizza con Salsa de Tomate Muzzarella Tomate y Orégano Grande",
       precio: 8999,
@@ -72,7 +56,6 @@ const pizzas = [
       stock: 35
     },
     {
-      id: '09',
       nombre: "NAPOLITANA Y JAMON",
       descripcion: "Pizza con Salsa de Tomate Muzzarella Jamón Tomate y Orégano Grande",
       precio: 11999,
@@ -81,7 +64,6 @@ const pizzas = [
       stock: 8
     },
     {
-      id: '10',
       nombre: "4 QUESOS",
       descripcion: "Pizza con Salsa de Tomate Muzzarella Cheddar Roquefort Parmesano y Oregano Grande",
       precio: 14999,
@@ -90,7 +72,6 @@ const pizzas = [
       stock: 15
     },
     {
-      id: '11',
       nombre: "PEPPERONI",
       descripcion: "Pizza con Salsa de Tomate Muzzarella Pepperoni y Orégano Grande",
       precio: 14299,
@@ -99,7 +80,6 @@ const pizzas = [
       stock: 30
     },
     {
-      id: '12',
       nombre: "CANCHA",
       descripcion: "Pizza con Salsa de Tomate y Orégano sin Lácteos Apta Veganos Grande",
       precio: 4999,
@@ -108,7 +88,6 @@ const pizzas = [
       stock: 25
     },
     {
-      id: '13',
       nombre: "RUCULA",
       descripcion: "Pizza con salsa de Tomate Muzzarella Rúcula Parmesano y Orégano Grande",
       precio: 8299,
@@ -117,8 +96,7 @@ const pizzas = [
       stock: 22
     },
     {
-      id: '14',
-      nombre: "PROVOLONE Y MORRON GRANDE",
+      nombre: "PROVOLONE Y MORRON",
       descripcion: "Pizza con Salsa de Tomate Muzzarella Provolone Morrón Aceitunas Verdes y Orégano Grande",
       precio: 13499,
       imagen: "https://i.postimg.cc/852g766t/Provolone-y-Morro-n.jpg",
