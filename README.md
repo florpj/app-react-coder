@@ -12,7 +12,7 @@ El mismo consta de un E-Commerce de una tienda de pizzas.
 4. Levante la app en el servidor local, con el comando `npm run dev`
 
 ### Version HOST
-Para ver el proyecto online, ingrese a 
+Para ver el proyecto online, ingrese a (https://app-react-coder-zeta.vercel.app/)
 
 ### Librerias utilizadas 
 - Firebase (https://firebase.google.com): utilizada con base de datos 

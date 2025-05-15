@@ -11,7 +11,7 @@ const Checkout = () => {
   const [orderId, setOrderId] = useState('')
   const {register, handleSubmit, formState: {errors}, getValues} = useForm()
   const {cart, totalAPagar, removeList} = useContext(CartContext)
-  console.log(errors)
+  
   const finalizarCompra = (dataForm)=>{
     let orden ={
       comprador:{
@@ -46,17 +46,17 @@ const Checkout = () => {
             <h2 className='titulo-carrito'>Para terminar la compra, por favor complete sus datos:</h2>
             <form onSubmit={handleSubmit(finalizarCompra)}>
               <input className='control-formulario form-2x1' name='nombre' placeholder='Ingrese su nombre' type="text" {...register("nombre", {required:true, minLength:3})} />
-              {errors ?.nombre?.type === "required" && <span style={{color: 'red'}}>Por favor complete este campo requerido</span> }
+              {errors?.nombre?.type === "required" && <span style={{color: 'red'}}>Por favor complete este campo requerido</span> }
               {errors?.nombre?.type === "minLength" && <span style={{color: 'red'}}>Este campo debe contener minimo 3 caracteres</span> }
-              <input className='control-formulario form-2x1' name='apellido' placeholder='Ingrese su apellido' type="text" {...register("apellido", {require:true, minLength:3})}/>
-              {errors ?.apellido?.type === "required" && <span style={{color: 'red'}}>Por favor complete este campo requerido</span> }
+              <input className='control-formulario form-2x1' name='apellido' placeholder='Ingrese su apellido' type="text" {...register("apellido", {required:true, minLength:3})}/>
+              {errors?.apellido?.type === "required" && <span style={{color: 'red'}}>Por favor complete este campo requerido</span> }
               {errors?.apellido?.type === "minLength" && <span style={{color: 'red'}}>Este campo debe contener minimo 3 caracteres</span> }
-              <input className='control-formulario form-1x1' name='domicilio' placeholder='Ingrese su domicilio' type="text" {...register("domicilio", {require:true, minLength:3})} />
-              {errors ?.domicilio?.type === "required" && <span style={{color: 'red'}}>Por favor complete este campo requerido</span> }
+              <input className='control-formulario form-1x1' name='domicilio' placeholder='Ingrese su domicilio' type="text" {...register("domicilio", {required:true, minLength:7})} />
+              {errors?.domicilio?.type === "required" && <span style={{color: 'red'}}>Por favor complete este campo requerido</span> }
               {errors?.domicilio?.type === "minLength" && <span style={{color: 'red'}}>Este campo debe contener minimo 3 caracteres</span> }
-              <input className='control-formulario form-2x1' name='email' placeholder='Ingrese su email' type="email" {...register("email", {require:true})}/>
+              <input className='control-formulario form-2x1' name='email' placeholder='Ingrese su email' type="email" {...register("email", {required:true})}/>
               {errors ?.email?.type === "required" && <span style={{color: 'red'}}>Por favor complete este campo requerido</span> }
-              <input className='control-formulario form-2x1' name='copiaemail' placeholder='Repita su email' type="email" {...register("copiaemail", {require:true, validate:{emailIgual: mail2 => mail2 === getValues().email }})}/>
+              <input className='control-formulario form-2x1' name='copiaemail' placeholder='Repita su email' type="email" {...register("copiaemail", {required:true, validate:{emailIgual: mail2 => mail2 === getValues().email }})}/>
               {errors ?.copiaemail?.type === "required" && <span style={{color: 'red'}}>Por favor complete este campo requerido</span> }
               {errors ?.copiaemail?.type === "emailIgual" && <span style={{color: 'red'}}>Los emails no son iguales</span> }
               

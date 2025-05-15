@@ -17,14 +17,17 @@ const ItemCount = ({stock, OnAdd}) => {
     }
 
     return (
-      <div className="contenedorCont">
+      <div>
+      {stock === 0 ? <p>Prodcuto sin stock</p>
+      :<div className="contenedorCont">
         <div className="contador">
           <button className="botonCont" onClick={restar}>-</button>
           <span className="valor">{cont}</span>
           <button className="botonCont"onClick={sumar}>+</button>
         </div>
         <button className="boton" onClick={()=> stock && cont && OnAdd(cont)}>Agregar al pedido</button>
-      </div>
+      </div>}
+  </div>
   )
 }
 
