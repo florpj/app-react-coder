@@ -29,22 +29,6 @@ const ItemListContainer = ({greeting}) => {
     }, [categoria])
     
 
-    // useEffect(() => {
-    //     setLoader(true)
-    //     getPizzas()
-    //     .then((response)=>{
-    //         if(categoria){
-    //             setData(response.filter((el)=>el.categoria===categoria))
-    //         } else{
-    //             setData(response)
-    //         }
-            
-    //     })
-    //     .catch((error)=> console.log(error))
-    //     .finally(()=> setLoader(false))
-        
-    // }, [categoria])
-    
     return(
         <>
         { loader ? 

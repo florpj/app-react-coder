@@ -6,6 +6,7 @@ import { collection, doc, getDoc } from 'firebase/firestore'
 import { db } from '../service/firebase.jsx'
 import './stylesComponents/AccStyles.css'
 import './stylesComponents/CartStyles.css'
+import { Link } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({})
@@ -33,12 +34,12 @@ const ItemDetailContainer = () => {
     
   
     if (invalid) {
-      return console.log('No encontramos pizzas')
-      // <div className='container-carrito'>
-      //   <h2 className='titulo-carrito'>No encontramos ese producto 😒</h2>    
-      //   <p className='parrafo-carrito'>Te invitamos a seguir recorriendo nuestra tienda donde seguramente encontraras algo de tu agrado 🍕</p>
-      //   <Link className='boton' to='/'>IR A LA TIENDA</Link>
-      // </div>
+      return (
+      <div className='container-carrito'>
+        <h2 className='titulo-carrito'>No encontramos ese producto 😒</h2>    
+        <p className='parrafo-carrito'>Te invitamos a seguir recorriendo nuestra tienda donde seguramente encontraras algo de tu agrado 🍕</p>
+        <Link className='boton' to='/'>IR A LA TIENDA</Link>
+      </div>)
     }
     
   return (

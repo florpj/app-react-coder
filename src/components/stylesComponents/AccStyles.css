@@ -50,3 +50,24 @@
     color: rgb(255, 249, 220);
     text-decoration: none;
   }
+
+  .control-formulario{
+    display:inline-block;
+    padding: 12px 16px;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: rgb(255, 249, 220);
+  }
+  .form-1x1{
+     width: 94%;
+  }
+  .form-2x1{
+     width: 46%;
+  }
+  .enviar{
+    margin-top: 0.8rem;
+  }

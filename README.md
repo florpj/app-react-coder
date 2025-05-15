@@ -1,12 +1,24 @@
-# React + Vite
+# PROYECTO FINAL CODER
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue realizado como pratica de curso de React de CoderHouse, se entrega para su evaluación
+El mismo consta de un E-Commerce de una tienda de pizzas.
 
-Currently, two official plugins are available:
+![imagen](/public/imagen_readme.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalación 
+1. Clone el repositorio
+2. Haga el comando `cd app-react-coder` para moverse a la carpeta del proyecto
+3. Instale dependencias con el comando `npm install`
+4. Levante la app en el servidor local, con el comando `npm run dev`
 
-## Expanding the ESLint configuration
+### Version HOST
+Para ver el proyecto online, ingrese a 
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Librerias utilizadas 
+- Firebase (https://firebase.google.com): utilizada con base de datos 
+- React Router Dom (https://reactrouter.com/): Utilizada para  la navegacion
+- React Icons (https://react-icons.github.io/react-icons/): Utilizada para los iconos 
+- React Hook Form (https://react-hook-form.com): Utilizada para los formularios
+- Sweet Alert 2 (https://sweetalert2.github.io/): Utilizada para los alerts
+
+Desarrollado por Florencia Ponce
