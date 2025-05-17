@@ -17,9 +17,10 @@ const ItemCount = ({stock, OnAdd}) => {
     }
 
     return (
-      <div>
-      {stock === 0 ? <p>Prodcuto sin stock</p>
-      :<div className="contenedorCont">
+      <div className="contenedorCont">
+      {stock === 0 ? <p>Producto sin stock</p>
+      :
+      <div className="contenedorCont">
         <div className="contador">
           <button className="botonCont" onClick={restar}>-</button>
           <span className="valor">{cont}</span>
